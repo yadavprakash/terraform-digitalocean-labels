@@ -24,7 +24,7 @@ This configuration includes a custom "labels" module for managing resource label
 
 ```hcl
 module "labels" {
-  source      = "git::https://github.com/opsstation/terraform-digitalocean-labels.git?ref=v1.0.0"
+  source      = "git::https://github.com/yadavprakash/terraform-digitalocean-labels.git?ref=v1.0.0"
   name        = "app"
   environment = "test"
   label_order = ["name", "environment"]
@@ -39,13 +39,13 @@ Make sure to replace "your_module_source" with the actual source URL or path to 
 
 
 ## Examples
-For detailed examples on how to use this module, please refer to the [Examples](https://github.com/opsstation/terraform-digitalocean-labels/tree/master/_examples) directory within this repository.
+For detailed examples on how to use this module, please refer to the [Examples](https://github.com/yadavprakash/terraform-digitalocean-labels/tree/master/_examples) directory within this repository.
 
 ## Author
-Your Name Replace **MIT** and **OPSSTATION** with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
+Your Name Replace **MIT** and **yadavprakash** with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
 
 ## License
-This project is licensed under the **MIT** License - see the [LICENSE](https://github.com/opsstation/terraform-digitalocean-labels/blob/master/LICENSE) file for details.
+This project is licensed under the **MIT** License - see the [LICENSE](https://github.com/yadavprakash/terraform-digitalocean-labels/blob/master/LICENSE) file for details.
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -82,7 +82,7 @@ No modules.
 | <a name="input_enabled"></a> [enabled](#input\_enabled) | Set to false to prevent the module from creating any resources. | `bool` | `true` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | Environment (e.g. `prod`, `dev`, `staging`). | `string` | `""` | no |
 | <a name="input_label_order"></a> [label\_order](#input\_label\_order) | Label order, e.g. `name`,`application`. | `list(any)` | <pre>[<br>  "name",<br>  "environment"<br>]</pre> | no |
-| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'terraform-do-modules' or 'opsstation.com' | `string` | `"opsstation"` | no |
+| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'terraform-do-modules' or 'yadavprakash.com' | `string` | `"yadavprakash"` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name  (e.g. `app` or `cluster`). | `string` | `""` | no |
 
 ## Outputs
@@ -91,6 +91,6 @@ No modules.
 |------|-------------|
 | <a name="output_environment"></a> [environment](#output\_environment) | Normalized environment. |
 | <a name="output_id"></a> [id](#output\_id) | Disambiguated ID. |
-| <a name="output_managedby"></a> [managedby](#output\_managedby) | 'managedby' ,'opsstation' |
+| <a name="output_managedby"></a> [managedby](#output\_managedby) | 'managedby' ,'yadavprakash' |
 | <a name="output_name"></a> [name](#output\_name) | Normalized name. |
 <!-- END_TF_DOCS -->

@@ -15,5 +15,5 @@ output "environment" {
 
 output "managedby" {
   value       = digitalocean_tag.environment[0].name
-  description = "'managedby' ,'opsstation'"
+  description = "'managedby' ,'yadavprakash'"
 }

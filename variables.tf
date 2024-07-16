@@ -24,8 +24,8 @@ variable "attributes" {
 
 variable "managedby" {
   type        = string
-  default     = "opsstation"
-  description = "ManagedBy, eg 'terraform-do-modules' or 'opsstation.com'"
+  default     = "yadavprakash"
+  description = "ManagedBy, eg 'terraform-do-modules' or 'yadavprakash.com'"
 }
 
 variable "enabled" {
