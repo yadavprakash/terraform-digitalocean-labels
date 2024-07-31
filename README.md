@@ -24,7 +24,7 @@ This configuration includes a custom "labels" module for managing resource label
 
 ```hcl
 module "labels" {
-  source      = "git::https://github.com/yadavprakash/terraform-digitalocean-labels.git?ref=v1.0.0"
+  source      = "git::https://github.com/yadavprakash/terraform-digitalocean-labels.git"
   name        = "app"
   environment = "test"
   label_order = ["name", "environment"]
